@@ -1,14 +1,14 @@
 Extra MCU support for Arduino IDE
 =================================
 
-This add support for several Microcontrollers recently added by Arduino Team in Arduino IDE.
+This add support for several Microcontrollers recently added by Arduino Team in Arduino IDE. It works with the lastest IDE version of Arduino 1.0.4.x (not the 1.5.x!!!). From 1.0.3 Arduino team added some kind of support for ATMega1284P (my preferred 8bit choice for serious stuff) but never supported directly so in your IDE you will not find the 1284P mcu, too bad, so I've done this that will not modify your existing ide (apart board.txt file where you just need to add some extra lines)
 Here's the list of Microcontrollers:
-ATMega1284P
-ATMega644P
-ATTiny45
-ATTyny85
-ATTyny44
-ATTyny84
+ - <b>ATMega1284P</b> (Finally it works as expected!)
+ - ATMega644P
+ - ATTiny45
+ - ATTyny85
+ - ATTyny44
+ - ATTyny84
 
 Currently only ATMega1284P has been extensively tested and worked well in all situations. I've maded several changes to let
 port manipulation easy and compatible with optimizations (aka direct port handle) I've used in my library but also let user
